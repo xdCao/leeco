@@ -1,6 +1,6 @@
 package org.example.hot100;
 
-import org.apache.commons.collections4.CollectionUtils;
+import org.checkerframework.checker.units.qual.A;
 
 import java.util.*;
 
@@ -13,9 +13,45 @@ public class Permute {
 
     public static void main(String[] args) {
         Permute permute = new Permute();
-        List<List<Integer>> permute1 = permute.permute(new int[]{1});
+        List<List<Integer>> permute1 = permute.permute2(new int[]{1, 2, 3});
         System.out.println(permute1);
     }
+
+    public List<List<Integer>> permute2(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (nums == null || nums.length == 0) {
+            return res;
+        }
+        if (nums.length == 1) {
+            List<Integer> list = new ArrayList<>();
+            list.add(nums[0]);
+            res.add(list);
+            return res;
+        }
+        Set<Integer> visited = new HashSet<>();
+        backTrack(nums, visited, res, new ArrayList<>());
+        return res;
+    }
+
+    private void backTrack(int[] nums, Set<Integer> visited, List<List<Integer>> res, List<Integer> list) {
+        if (list.size() == nums.length) {
+            List<Integer> copy = new ArrayList<>();
+            copy.addAll(list);
+            res.add(copy);
+        }
+        for (int num : nums) {
+            if (visited.contains(num)) {
+                continue;
+            }
+            visited.add(num);
+            list.add(num);
+            backTrack(nums, visited, res, list);
+            visited.remove(num);
+            list.removeIf(ele -> ele.equals(num));
+        }
+
+    }
+
 
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
