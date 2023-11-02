@@ -1,4 +1,4 @@
-package org.example.hot100;
+package org.example.hot100.listNode;
 
 import java.util.HashMap;
 import java.util.Map;

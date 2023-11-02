@@ -1,4 +1,6 @@
-package org.example.hot100;
+package org.example.hot100.listNode;
+
+import org.example.hot100.listNode.ListNode;
 
 /**
  * 24. 两两交换链表中的节点

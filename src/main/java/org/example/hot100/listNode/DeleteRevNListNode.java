@@ -1,4 +1,4 @@
-package org.example.hot100;
+package org.example.hot100.listNode;
 
 /**
  * 19. 删除链表的倒数第 N 个结点

@@ -1,4 +1,4 @@
-package org.example.hot100;
+package org.example.hot100.listNode;
 
 /**
  * 160. 相交链表

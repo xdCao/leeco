@@ -1,4 +1,4 @@
-package org.example.hot100;
+package org.example.hot100.listNode;
 
 /**
  * 148. 排序链表

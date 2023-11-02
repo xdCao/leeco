@@ -1,4 +1,6 @@
-package org.example.hot100;
+package org.example.hot100.listNode;
+
+import org.example.hot100.listNode.ListNode;
 
 /**
  * 25. K 个一组翻转链表

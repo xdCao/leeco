@@ -1,6 +1,6 @@
-package org.example.hot100;
+package org.example.hot100.listNode;
 
-import java.util.List;
+import org.example.hot100.listNode.ListNode;
 
 /**
  * @author buku.ch
