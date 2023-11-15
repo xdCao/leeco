@@ -1,4 +1,4 @@
-package org.example.hot100.erfeng;
+package org.example.hot100.erfen;
 
 /**
  * 74. 搜索二维矩阵
