@@ -1,4 +1,4 @@
-package org.example.hot100;
+package org.example.hot100.dp;
 
 /**
  * @author buku.ch
