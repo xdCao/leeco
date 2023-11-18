@@ -37,18 +37,18 @@ public class LowestCommonAncestor {
         return cur;
     }
 
-    private boolean dfs(TreeNode root, TreeNode p, List<TreeNode> path) {
+    private boolean dfs(TreeNode root, TreeNode target, List<TreeNode> path) {
         if (root == null) {
             return false;
         }
         path.add(root);
-        if (root == p) {
+        if (root == target) {
             return true;
         }
-        if (dfs(root.left, p, path)) {
+        if (dfs(root.left, target, path)) {
             return true;
         }
-        if (dfs(root.right, p, path)) {
+        if (dfs(root.right, target, path)) {
             return true;
         }
         path.remove(root);
