@@ -10,7 +10,7 @@ import java.util.Set;
  * @Desc
  * @date 2023/11/21 14:56
  */
-public class PartArr {
+public class SplitArray {
 
     public static void main(String[] args) {
 
