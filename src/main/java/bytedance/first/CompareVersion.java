@@ -9,16 +9,9 @@ import org.apache.commons.lang3.StringUtils;
  */
 public class CompareVersion {
 
-    public static void main(String[] args) {
-        System.out.println(compare("1.2.1", "1.2"));
-        System.out.println(compare("1.2.2", "1.2.1"));
-        System.out.println(compare("1.1.1", "1.2.1"));
-        System.out.println(compare("2.1", "2.2.1.1"));
-    }
-
-    public static int compare(String s1, String s2) {
-        String[] split1 = s1.split("\\.");
-        String[] split2 = s2.split("\\.");
+    public int compareVersion(String version1, String version2) {
+        String[] split1 = version1.split("\\.");
+        String[] split2 = version2.split("\\.");
         int idx1 = 0;
         int idx2 = 0;
         while (idx1 < split1.length || idx2 < split2.length) {
